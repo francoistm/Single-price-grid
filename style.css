@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+
+body {
+    background-color: #dbf5f0;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px, 100px;
+    justify-content: center;
+    margin:  10% 20%;
+    border-radius: 15px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12)
+;
+}
+
+.grid-container div {
+    padding: 40px 70px 40px 40px;
+}
+
+.community {
+    background-color: #ffffff;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 15px 15px 0 0;
+}
+.community h1 {
+    color: #0c6170;
+}
+.community h2 {
+    color: #37beb0;
+}
+.community p {
+    font-size: 20px;
+    color: gray;
+}
+
+.subscription {
+    background-color: #0c6170 ;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-radius: 0 0 0 15px;
+    color: #ffffff;
+}
+
+.subscription p strong {
+    font-size: 30px;
+}
+
+.subscription button {
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #37beb0; 
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    box-shadow: 0 3px 4px #00000050;
+}
+
+.whyus {
+    background-color: #37beb0; 
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-radius: 0 0 15px 0;
+    color: #ffffff;
+}
+
+
+
+@media only screen and (max-width: 1150px) {
+    .grid-container {
+        grid-template-columns: auto;
+        grid-template-rows: 100px, 100px, 100px;
+        border-radius: 15px;
+    }
+
+    .grid-container div {
+        padding: 40px;
+    }
+    .community {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+    .subscription {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        border-radius: 0 0 0 0;
+    }
+    
+    .whyus {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        border-radius: 0 0 15px 15px;
+    }
+}
